@@ -85,9 +85,8 @@ a {
 }
 
 .inner-container {
-  max-width: 100rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 .green-button {
@@ -169,16 +168,14 @@ header {
 
 .main__hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  max-height: 50rem;
 }
 .main__hero .main__hero--left {
   max-width: 49rem;
-  height: 100%;
   margin-right: 2rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 10rem;
 }
 .main__hero .main__hero--left .main__titleContainer {
@@ -249,27 +246,23 @@ header {
 }
 .main__hero .main__hero--right {
   max-width: 49rem;
-  height: 100%;
 }
 .main__hero .main__hero--right .main__hero--image {
   max-width: 49rem;
-  height: 100%;
 }
 .main__hero .main__cardContainer {
-  height: 14rem;
   position: absolute;
   bottom: -7rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 8rem;
 }
 .main__hero .main__cardContainer .main__card {
-  height: 100%;
   padding: 1rem;
   margin-right: 1rem;
   background-color: #ffffff;
+  box-shadow: 1px 1px 5px #3d3d3d;
   margin-bottom: 2rem;
 }
 .main__hero .main__cardContainer .main__card .card__heading {

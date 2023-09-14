@@ -1,17 +1,15 @@
 @use "../partials/index" as *;
 .main__hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  max-height: 50rem;
+
   .main__hero--left {
     max-width: 49rem;
-    height: 100%;
     margin-right: 2rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 10rem;
-
     .main__titleContainer {
       display: flex;
       justify-content: start;
@@ -82,27 +80,23 @@
   }
   .main__hero--right {
     max-width: 49rem;
-    height: 100%;
+
     .main__hero--image {
       max-width: 49rem;
-      height: 100%;
     }
   }
   .main__cardContainer {
-    height: 14rem;
     position: absolute;
     bottom: -7rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 8rem;
     .main__card {
-      height: 100%;
       padding: 1rem;
       margin-right: 1rem;
       background-color: $sl-color-white;
-
+      box-shadow: 1px 1px 5px $sl-color-black;
       margin-bottom: 2rem;
       .card__heading {
         display: block;

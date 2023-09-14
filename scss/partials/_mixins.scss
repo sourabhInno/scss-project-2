@@ -4,10 +4,10 @@
   width: 100%;
 }
 .inner-container {
-  max-width: 100rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  width: 1300px;
+  margin: 0 auto;
 }
+
 .green-button {
   background-color: $sl-color-greenBlue;
   color: $sl-color-white;
