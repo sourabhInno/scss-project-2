@@ -1,8 +1,5 @@
 @use "../partials/index" as *;
 
-header {
-  margin-bottom: 0.5rem;
-}
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -48,8 +45,8 @@ header {
     font-family: "Lato";
     font-size: 1rem;
     color: $sl-color-grey;
-    background-color: $sl-color-white;
-    border: 0px solid $sl-color-white;
+    background-color: inherit;
+    border: 0px solid;
     width: 7rem;
     height: 3rem;
     margin-left: 2rem;

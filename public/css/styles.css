@@ -82,11 +82,13 @@ a {
 }
 .container {
   width: 100%;
+  background-color: #f5f5f5;
 }
 
 .inner-container {
   width: 1300px;
   margin: 0 auto;
+  background-color: #f5f5f5;
 }
 
 .green-button {
@@ -99,15 +101,11 @@ a {
   font-size: 0.8rem;
   border-style: solid;
   border-radius: 2rem;
-  border-color: #ffffff;
+  border-color: inherit;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-}
-
-header {
-  margin-bottom: 0.5rem;
 }
 
 .navbar__container {
@@ -159,8 +157,8 @@ header {
   font-family: "Lato";
   font-size: 1rem;
   color: #666666;
-  background-color: #ffffff;
-  border: 0px solid #ffffff;
+  background-color: inherit;
+  border: 0px solid;
   width: 7rem;
   height: 3rem;
   margin-left: 2rem;

@@ -2,10 +2,12 @@
 @use "../partials/typography" as *;
 .container {
   width: 100%;
+  background-color: $sl-color-whiteBg;
 }
 .inner-container {
   width: 1300px;
   margin: 0 auto;
+  background-color: $sl-color-whiteBg;
 }
 
 .green-button {
@@ -18,7 +20,7 @@
   font-size: 0.8rem;
   border-style: solid;
   border-radius: 2rem;
-  border-color: $sl-color-white;
+  border-color: inherit;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
