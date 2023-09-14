@@ -1,0 +1,57 @@
+@use "../partials/index" as *;
+
+header {
+  margin-bottom: 0.5rem;
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar__listContainer {
+  max-width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  li {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    font-family: "Lato";
+    a {
+      color: $sl-color-grey;
+      &:hover {
+        color: $sl-color-yellow;
+      }
+    }
+    &:first-child {
+      margin-left: 0rem;
+    }
+  }
+}
+.header__logoContainer {
+  max-width: 32rem;
+  margin-right: 2rem;
+  .header__logo {
+    width: 10rem;
+    height: 3rem;
+  }
+}
+.header__buttonContainer {
+  max-width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__button--signIn {
+    font-family: "Lato";
+    font-size: 1rem;
+    color: $sl-color-grey;
+    background-color: $sl-color-white;
+    border: 0px solid $sl-color-white;
+    width: 7rem;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+}

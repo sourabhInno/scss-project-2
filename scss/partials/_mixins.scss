@@ -1,0 +1,26 @@
+@use "../partials/color" as *;
+@use "../partials/typography" as *;
+.container {
+  width: 100%;
+}
+.inner-container {
+  max-width: 100rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.green-button {
+  background-color: $sl-color-greenBlue;
+  color: $sl-color-white;
+  font-family: "Lato";
+  text-align: center;
+  width: 7rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: $sl-color-white;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
