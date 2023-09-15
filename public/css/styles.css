@@ -182,19 +182,20 @@ a {
   align-items: center;
   margin-bottom: 1rem;
 }
-.main__hero .main__hero--left .main__titleContainer .main__tile--line {
-  color: #f7bb44;
-  background-color: #f7bb44;
-  border-color: #f7bb44;
-  height: 3px;
-  border: 0px;
-  width: 4rem;
-  margin-right: 1rem;
-}
 .main__hero .main__hero--left .main__titleContainer .main__title {
   color: #317a82;
   font-family: "Lato";
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__hero .main__hero--left .main__titleContainer .main__title:before {
+  content: "";
+  margin-right: 1rem;
+  border: 1px solid #f7bb44;
+  color: #f7bb44;
+  width: 3rem;
 }
 .main__hero .main__hero--left .main__heading {
   font-weight: 300;

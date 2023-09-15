@@ -16,19 +16,22 @@
       justify-content: start;
       align-items: center;
       margin-bottom: 1rem;
-      .main__tile--line {
-        color: $sl-color-yellow;
-        background-color: $sl-color-yellow;
-        border-color: $sl-color-yellow;
-        height: 3px;
-        border: 0px;
-        width: 4rem;
-        margin-right: 1rem;
-      }
+
       .main__title {
         color: $sl-color-greenBlue;
         font-family: "Lato";
         font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:before {
+          content: "";
+          margin-right: 1rem;
+          border: 1px solid $sl-color-yellow;
+          color: $sl-color-yellow;
+          width: 3rem;
+        }
       }
     }
     .main__heading {
