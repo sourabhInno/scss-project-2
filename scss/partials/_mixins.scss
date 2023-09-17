@@ -1,28 +1,8 @@
-@use "../partials/color" as *;
+@use "../partials/variables" as *;
 @use "../partials/typography" as *;
-.container {
-  width: 100%;
-  background-color: $sl-color-whiteBg;
-}
-.inner-container {
-  width: 1300px;
-  margin: 0 auto;
-  background-color: $sl-color-whiteBg;
-}
 
-.green-button {
-  background-color: $sl-color-greenBlue;
-  color: $sl-color-white;
-  font-family: "Lato";
-  text-align: center;
-  width: 7rem;
-  height: 3rem;
-  font-size: 0.8rem;
-  border-style: solid;
-  border-radius: 2rem;
-  border-color: inherit;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+@mixin small-size {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
 }

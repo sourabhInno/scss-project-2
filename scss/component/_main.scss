@@ -5,12 +5,20 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
+  @include small-size {
+    flex-direction: column;
+  }
   .main__hero--left {
     max-width: 49rem;
     margin-right: 2rem;
     padding-top: 3rem;
     padding-bottom: 10rem;
+    @include small-size {
+      width: 100%;
+      margin-right: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
     .main__titleContainer {
       display: flex;
       justify-content: start;
@@ -84,7 +92,9 @@
   }
   .main__hero--right {
     max-width: 49rem;
-
+    @include small-size {
+      width: 100%;
+    }
     .main__hero--image {
       max-width: 49rem;
     }
@@ -96,12 +106,21 @@
     justify-content: space-around;
     align-items: center;
     padding: 0 8rem;
+    @include small-size {
+      flex-direction: column;
+      position: initial;
+
+      padding: 0rem;
+    }
     .main__card {
       padding: 1rem;
       margin-right: 1rem;
       background-color: $sl-color-white;
       box-shadow: 1px 1px 5px $sl-color-black;
       margin-bottom: 2rem;
+      @include small-size {
+        margin-right: 0;
+      }
       .card__heading {
         display: block;
         color: $sl-color-greenBlue;
