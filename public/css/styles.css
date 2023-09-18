@@ -81,18 +81,18 @@ a {
 
 /* css reset ends */
 .container {
-  width: 100vw;
+  width: 100%;
   background-color: #f5f5f5;
 }
 
 .inner-container {
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
   background-color: #f5f5f5;
 }
 @media screen and (max-width: 425px) {
   .inner-container {
-    width: 400px;
+    max-width: 450px;
   }
 }
 
@@ -119,6 +119,18 @@ a {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: relative;
+}
+.navbar__container .ham-menue {
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .navbar__container .ham-menue {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 32.5px;
+  }
 }
 
 .navbar__listContainer {
@@ -128,10 +140,29 @@ a {
   align-items: center;
   margin-right: 2rem;
 }
+@media screen and (max-width: 425px) {
+  .navbar__listContainer {
+    display: none;
+    max-width: 450px;
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    z-index: 1;
+    background-color: #f7bb44;
+  }
+}
 .navbar__listContainer li {
   font-size: 1rem;
   margin-left: 1.5rem;
   font-family: "Lato";
+}
+@media screen and (max-width: 425px) {
+  .navbar__listContainer li {
+    margin-left: 0rem;
+  }
 }
 .navbar__listContainer li a {
   color: #666666;
@@ -147,9 +178,20 @@ a {
   max-width: 32rem;
   margin-right: 2rem;
 }
+@media screen and (max-width: 425px) {
+  .header__logoContainer {
+    width: 120px;
+    margin-right: 32.5px;
+  }
+}
 .header__logoContainer .header__logo {
   width: 10rem;
   height: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .header__logoContainer .header__logo {
+    width: 100%;
+  }
 }
 
 .header__buttonContainer {
@@ -157,6 +199,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 425px) {
+  .header__buttonContainer {
+    width: 120px;
+  }
 }
 .header__buttonContainer .header__button--signIn {
   font-family: "Lato";
@@ -167,6 +214,26 @@ a {
   width: 7rem;
   height: 3rem;
   margin-left: 2rem;
+}
+@media screen and (max-width: 425px) {
+  .header__buttonContainer .header__button--signIn {
+    font-size: 0.5rem;
+    width: 50px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__buttonContainer .header__button--signUp {
+    font-size: 0.5rem;
+    width: 50px;
+    margin-left: 20px;
+    border-radius: 16px;
+    height: 25px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+  }
 }
 
 .main__hero {
@@ -208,6 +275,13 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--left .main__titleContainer .main__title {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+}
 .main__hero .main__hero--left .main__titleContainer .main__title:before {
   content: "";
   margin-right: 1rem;
@@ -224,16 +298,34 @@ a {
   font-family: "Bebas";
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--left .main__heading {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+}
 .main__hero .main__hero--left .main__paragraph {
   font-family: "Lato";
   font-size: 1.25rem;
   color: #666666;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--left .main__paragraph {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 .main__hero .main__hero--left .main__hero--button {
   width: 10rem;
   font-size: 1rem;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--left .main__hero--button {
+    width: 8rem;
+    margin-bottom: 1rem;
+  }
 }
 .main__hero .main__hero--left .main__hero--sectorContainer {
   display: flex;
@@ -247,10 +339,20 @@ a {
   font-size: 1rem;
   margin-left: 4rem;
 }
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--left .main__hero--sectorContainer .sectors__text {
+    margin-left: 2rem;
+  }
+}
 .main__hero .main__hero--left .main__hero--sectorContainer .sectors__text:before {
   content: "•";
   color: #f7bb44;
   margin-right: 8px;
+}
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--left .main__hero--sectorContainer .sectors__text:before {
+    margin-right: 3px;
+  }
 }
 .main__hero .main__hero--left .main__hero--sectorContainer .sectors__text:nth-of-type(3n + 1) {
   margin-left: 0rem;
@@ -272,6 +374,11 @@ a {
 .main__hero .main__hero--right .main__hero--image {
   max-width: 49rem;
 }
+@media screen and (max-width: 425px) {
+  .main__hero .main__hero--right .main__hero--image {
+    width: 100%;
+  }
+}
 .main__hero .main__cardContainer {
   position: absolute;
   bottom: -7rem;
@@ -284,6 +391,7 @@ a {
   .main__hero .main__cardContainer {
     flex-direction: column;
     position: initial;
+    margin-top: 1rem;
     padding: 0rem;
   }
 }

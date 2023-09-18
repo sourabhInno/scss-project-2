@@ -72,16 +72,16 @@ a {
 /* css reset ends */
 
 .container {
-  width: 100vw;
+  width: 100%;
   background-color: $sl-color-whiteBg;
 }
 .inner-container {
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
   background-color: $sl-color-whiteBg;
 
   @include small-size {
-    width: 400px;
+    max-width: 450px;
   }
 }
 

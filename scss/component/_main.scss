@@ -32,7 +32,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        @include small-size {
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 0.8rem;
+        }
         &:before {
           content: "";
           margin-right: 1rem;
@@ -50,17 +54,29 @@
       color: $sl-color-black;
       font-family: "Bebas";
       margin-bottom: 2rem;
+      @include small-size {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
     }
     .main__paragraph {
       font-family: "Lato";
       font-size: 1.25rem;
       color: $sl-color-grey;
       margin-bottom: 2rem;
+      @include small-size {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
     }
     .main__hero--button {
       width: 10rem;
       font-size: 1rem;
       margin-bottom: 3rem;
+      @include small-size {
+        width: 8rem;
+        margin-bottom: 1rem;
+      }
     }
     .main__hero--sectorContainer {
       display: flex;
@@ -72,10 +88,16 @@
         font-family: "Lato";
         font-size: 1rem;
         margin-left: 4rem;
+        @include small-size {
+          margin-left: 2rem;
+        }
         &:before {
           content: "•";
           color: $sl-color-yellow;
           margin-right: 8px;
+          @include small-size {
+            margin-right: 3px;
+          }
         }
         &:nth-of-type(3n + 1) {
           margin-left: 0rem;
@@ -97,6 +119,9 @@
     }
     .main__hero--image {
       max-width: 49rem;
+      @include small-size {
+        width: 100%;
+      }
     }
   }
   .main__cardContainer {
@@ -109,7 +134,7 @@
     @include small-size {
       flex-direction: column;
       position: initial;
-
+      margin-top: 1rem;
       padding: 0rem;
     }
     .main__card {

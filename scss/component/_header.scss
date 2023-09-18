@@ -6,17 +6,43 @@
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: relative;
+  .ham-menue {
+    display: none;
+    @include small-size {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-right: 32.5px;
+    }
+  }
 }
 .navbar__listContainer {
   max-width: 32rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 2rem; 
+  margin-right: 2rem;
+  @include small-size {
+    display: none;
+    max-width: 450px;
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    z-index: 1;
+    background-color: $sl-color-yellow;
+  }
+
   li {
     font-size: 1rem;
     margin-left: 1.5rem;
     font-family: "Lato";
+    @include small-size {
+      margin-left: 0rem;
+    }
     a {
       color: $sl-color-grey;
       &:hover {
@@ -31,9 +57,16 @@
 .header__logoContainer {
   max-width: 32rem;
   margin-right: 2rem;
+  @include small-size {
+    width: 120px;
+    margin-right: 32.5px;
+  }
   .header__logo {
     width: 10rem;
     height: 3rem;
+    @include small-size {
+      width: 100%;
+    }
   }
 }
 .header__buttonContainer {
@@ -41,6 +74,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include small-size {
+    width: 120px;
+  }
   .header__button--signIn {
     font-family: "Lato";
     font-size: 1rem;
@@ -50,5 +86,23 @@
     width: 7rem;
     height: 3rem;
     margin-left: 2rem;
+    @include small-size {
+      font-size: 0.5rem;
+      width: 50px;
+      margin-left: 20px;
+    }
+  }
+  .header__button--signUp {
+    @include small-size {
+      font-size: 0.5rem;
+      width: 50px;
+      margin-left: 20px;
+      border-radius: 16px;
+      height: 25px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+    }
   }
 }
